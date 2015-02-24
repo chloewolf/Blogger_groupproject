@@ -23,8 +23,7 @@ class ArticlesController < ApplicationController
         
         flash.notice = "Article \"#{@article.title}\" Created!"
         
-        redirect_to article_path(@article)
-        
+        redirect_to articles_path(@article)
     end
     
     def destroy
@@ -49,7 +48,7 @@ class ArticlesController < ApplicationController
 
         flash.notice = "Article \"#{@article.title}\" Updated!"
          
-        redirect_to article_path(@article)
+        redirect_to articles_path(@article)
     end
     
 end 
